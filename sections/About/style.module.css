@@ -1,0 +1,23 @@
+
+
+.yellowtopdiv {
+    width: inherit;
+   
+}
+
+.yellowtopdiv::before {
+    content : '';
+    z-index: -2;
+    display: inline;
+    border-style: solid solid hidden hidden;
+    border-width: 3px;
+    border-color: #F9BA3F;
+    padding-left: 0%;
+    padding-right: 0%;
+    position: absolute;
+    top: -1%;
+    width: 50px;
+    height: 20px;
+    right: 0px;
+}
+

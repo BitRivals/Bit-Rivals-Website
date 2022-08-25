@@ -1,0 +1,46 @@
+
+.image,
+.draven,
+.peach,
+.corvo,
+.nada {
+    position: relative;
+}
+
+.image span,
+.draven span,
+.peach span,
+.nada span,
+.corvo span {
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .image::after,
+    .draven:after,
+    .peach:after,
+    .corvo:after,
+    .nada:after {
+        display: block;
+        height: 800px;
+        width: 137px;
+        background: linear-gradient(360deg, rgba(251,57,91,1) 5%, rgba(251,57,91,0) 70%);
+        position: absolute;
+        transform: rotate(45deg) skew(0deg, -45deg);
+        content: '';
+        right: -246px;
+        top: -676px;
+    }
+    .draven::after {
+        right: -237px !important;
+    }
+    
+    .peach::after {
+        right: -247px !important;
+    }
+    
+    .corvo::after {
+        right: -242px !important;
+    }
+}
+
